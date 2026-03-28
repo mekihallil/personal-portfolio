@@ -1,0 +1,61 @@
+backend/
+ ├── controllers/
+ ├── models/
+ ├── routes/
+ ├── middleware/
+ ├── config/
+ ├── server.ts
+
+
+frontend/
+ ├── components/
+ ├── pages/
+ ├── hooks/
+ ├── services/ (API calls)
+ ├── layouts/
+ ├── App.tsx
+
+
+tools
+
+Frontend: React + TypeScript + Tailwind + shadcn/ui + TanStack Query
+Backend: Node.js + Express
+Database: MongoDB + Mongoose
+
+
+Frontend (React)
+   ↓ API calls (Axios / Fetch)
+Backend (Express API)
+   ↓
+MongoDB (via Mongoose)
+
+
+
+Key Technologies — how they fit
+React + TypeScript
+Type safety (very important for real jobs)
+Component-based UI
+Tailwind + shadcn/ui
+Fast UI development
+Clean, modern design
+TanStack Query
+Data fetching + caching
+
+
+GET    /api/projects
+GET    /api/projects/:id
+POST   /api/projects
+PUT    /api/projects/:id
+DELETE /api/projects/:id
+
+
+Must-have Features (to stand out)
+
+Add these if you want remote job readiness:
+
+✅ Dark / Light mode
+✅ Responsive design
+✅ Loading skeletons (shadcn)
+✅ Error handling (frontend + backend)
+✅ SEO (meta tags)
+✅ GitHub links + live demo links
