@@ -8,7 +8,7 @@ export const Menutopbar: FC = (): ReactElement => {
   const [open, setOpen] = useState(false);
 
   return (
-    <Menubar className="flex justify-between items-center px-6 py-4 border-none m-5">
+    <Menubar className="flex justify-between items-center border-none mx-15 my-10">
       <h1 className="text-xl font-bold">M3k!</h1>
 
       <div className="flex items-center gap-6">
@@ -29,23 +29,23 @@ export const Menutopbar: FC = (): ReactElement => {
             className="absolute top-6 right-6 text-white"
             onClick={() => setOpen(false)}
           >
-            <ClearRoundedIcon fontSize="large" />
+            <ClearRoundedIcon className="mx-11 my-4" fontSize="large" />
           </button>
           <ul className="text-white text-4xl space-y-6 text-center">
             <li className="cursor-pointer hover:text-gray-400">
               <a href="Home">Home</a>
             </li>
             <li className="cursor-pointer hover:text-gray-400">
-              <a href="Home">About Me</a>
+              <a href="#">About Me</a>
             </li>
             <li className="cursor-pointer hover:text-gray-400">
-              <a href="Home">Experience</a>
+              <a href="#">Experience</a>
             </li>
             <li className="cursor-pointer hover:text-gray-400">
-              <a href="Home">Projects</a>
+              <a href="#">Projects</a>
             </li>
             <li className="cursor-pointer hover:text-gray-400">
-              <a href="Home">Contact</a>
+              <a href="#">Contact</a>
             </li>
           </ul>
         </div>
