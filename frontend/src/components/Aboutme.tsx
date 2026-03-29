@@ -9,7 +9,7 @@ import {
 export const Aboutme = () => {
   return (
     <>
-      <div className="flex h-160  bg-blue-600 ">
+      <div className="flex h-160  ">
         {/* paragraph about me   */}
         <div className="w-1/2 text-2xl pt-20">
           <div className="grid  h-full ">
