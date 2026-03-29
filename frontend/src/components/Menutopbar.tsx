@@ -1,9 +1,7 @@
 import { Menubar, MenubarMenu, MenubarTrigger } from "@/components/ui/menubar";
 import ClearRoundedIcon from "@mui/icons-material/ClearRounded";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
-
 import { useState, type FC, type ReactElement } from "react";
-
 export const Menutopbar: FC = (): ReactElement => {
   const [open, setOpen] = useState(false);
 
@@ -11,16 +9,18 @@ export const Menutopbar: FC = (): ReactElement => {
     <Menubar className="flex justify-between items-center border-none mx-15 my-10">
       <h1 className="text-xl font-bold">M3k!</h1>
 
-      <div className="flex items-center gap-6">
-        <MenubarMenu>
-          <MenubarTrigger onClick={() => setOpen(!open)}>
-            {open ? (
-              <ClearRoundedIcon fontSize="large" />
-            ) : (
-              <MenuRoundedIcon fontSize="large" />
-            )}
-          </MenubarTrigger>
-        </MenubarMenu>
+      <div className="flex ">
+        <div className="flex ml-5 gap-6">
+          <MenubarMenu>
+            <MenubarTrigger onClick={() => setOpen(!open)}>
+              {open ? (
+                <ClearRoundedIcon className=" " fontSize="large" />
+              ) : (
+                <MenuRoundedIcon className="" fontSize="large" />
+              )}
+            </MenubarTrigger>
+          </MenubarMenu>
+        </div>
       </div>
 
       {open && (

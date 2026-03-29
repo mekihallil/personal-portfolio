@@ -3,7 +3,7 @@ import MailOutlineRoundedIcon from "@mui/icons-material/MailOutlineRounded";
 export const Introsection = () => {
   return (
     <>
-      <div>
+      <div className="h-130">
         <div className="flex gap-6 mx-14 my-28">
           {/* introduction */}
           <div className="text w-3/5 h-auto  ">
