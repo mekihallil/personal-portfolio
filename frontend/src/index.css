@@ -8,7 +8,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: chartreuse;
+  background-color: #1e3a8a;
 }
 @custom-variant dark (&:is(.dark *));
 

@@ -1,3 +1,4 @@
+import { aboutData, aboutTextData } from "@/tempDB";
 import PersonIcon from "@mui/icons-material/Person";
 import {
   Card,
@@ -9,30 +10,23 @@ import {
 export const Aboutme = () => {
   return (
     <>
-      <div className="flex h-160  ">
+      <div className="flex h-160  mb-30">
         {/* paragraph about me   */}
-        <div className="w-1/2 text-2xl pt-20">
+        <div className="w-1/2 text-2xl pt-10">
           <div className="grid  h-full ">
             <div className="flex justify-center gap-8 ">
               <PersonIcon sx={{ fontSize: 70 }} />
               <h1 className="text-6xl pt-2">About Me</h1>
             </div>
-            <p className="pl-10 text-xl ">
-              I am a disciplined and motivated aspiring full-stack developer
-              focused on building modern, scalable web applications. I work with
-              technologies like TypeScript, React, Node.js, Express, and
-              MongoDB, aiming to write clean, efficient, and maintainable code.
-              I enjoy solving real-world problems and turning ideas into
-              user-friendly digital products.
-            </p>
-            <p className="px-10 text-xl ">
-              I believe consistent practice and continuous learning are key to
-              growth in technology. I improve my skills by building projects,
-              exploring new tools, and strengthening both frontend and backend
-              development. My goal is to become a professional developer who
-              contributes to impactful projects and succeeds in global tech
-              opportunities.
-            </p>
+            {aboutTextData.map((b) => {
+              return (
+                <div className="" key={b.id}>
+                  <p className="pl-10 text-[19px] text-center ">
+                    {b.description}
+                  </p>
+                </div>
+              );
+            })}
             <h4 className="ml-3 flex  justify-center">
               <i>
                 <q className="border-b-2 border-l-2 rounded-3xl ">
@@ -43,33 +37,40 @@ export const Aboutme = () => {
           </div>
         </div>
         {/* card about me  */}
-        <div className="w-1/2 grid content-center">
-          <div className="grid grid-cols-2 gap-4 h-full mx-20">
-            {/* Experiance  */}
-            <div className="grid place-content-center h-54 bg-amber-400">
-              Experiance Comming soon
-            </div>
-            <div className="grid place-content-center h-54 bg-amber-400">
-              Education
-            </div>
-            {/* Project  */}
-            <div className=" h-54 bg-amber-400">
-              <Card className="h-54 bg-amber-400">
-                <CardHeader>
-                  <CardTitle className="flex justify-center text-6xl">
-                    10+
-                  </CardTitle>
-                  <CardContent className="flex justify-center text-2xl">
-                    <p>Projects</p>
-                  </CardContent>
-                  <CardDescription className=" text-1xl">
-                    Card Description Card Description Card Description Card
-                    Description
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-            </div>
-            <div className="h-54 bg-amber-400">the best solving Project </div>
+        <div className="w-1/2 grid content-center mt-20">
+          <div className="grid grid-cols-2 gap-8  h-full mx-30">
+            {aboutData.map((a) => {
+              const Icon = a.icon;
+              return (
+                <div>
+                  <Card className="h-54  bg-amber-400 rounded-3xl " key={a.id}>
+                    <CardHeader>
+                      <CardTitle className=" h-1/3 text-6xl  flex justify-center ">
+                        {a.id === 4 ? (
+                          a.title
+                        ) : (
+                          <Icon style={{ fontSize: 80 }} />
+                        )}
+                      </CardTitle>
+                      <CardContent className="h-1/3 flex justify-center text-3xl">
+                        <p>
+                          {a.id === 4 ? (
+                            "Project"
+                          ) : a.id === 1 ? (
+                            <div className="text-xl">{a.title}</div>
+                          ) : (
+                            a.title
+                          )}
+                        </p>
+                      </CardContent>
+                      <CardDescription className="h-1/3 text-1xl">
+                        {a.description}
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

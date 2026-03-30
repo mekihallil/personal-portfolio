@@ -31,7 +31,7 @@ export const Menutopbar: FC = (): ReactElement => {
           >
             <ClearRoundedIcon className="mx-11 my-4" fontSize="large" />
           </button>
-          <ul className="text-white text-4xl space-y-6 text-center">
+          <ul className="text-white text-6xl space-y-6 text-center">
             <li className="cursor-pointer hover:text-gray-400">
               <a href="Home">Home</a>
             </li>
