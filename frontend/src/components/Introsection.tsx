@@ -13,13 +13,13 @@ export const Introsection = () => {
               I build systems that don't build systems that don't build{" "}
             </div>
             <div className="flex gap-4 py-7">
-              <a href="" className="email">
+              <a href="" className="">
                 <MailOutlineRoundedIcon />
               </a>
-              <a href="" className="email">
+              <a href="" className="">
                 in
               </a>
-              <a href="" className="email">
+              <a href="" className="">
                 Github
               </a>
             </div>

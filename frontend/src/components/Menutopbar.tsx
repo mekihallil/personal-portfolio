@@ -6,20 +6,21 @@ export const Menutopbar: FC = (): ReactElement => {
   const [open, setOpen] = useState(false);
 
   return (
-    <Menubar className="flex justify-between items-center border-none mx-15 my-10">
-      <h1 className="text-xl font-bold">M3k!</h1>
-
-      <div className="flex ">
-        <div className="flex ml-5 gap-6">
-          <MenubarMenu>
-            <MenubarTrigger onClick={() => setOpen(!open)}>
-              {open ? (
-                <ClearRoundedIcon className=" " fontSize="large" />
-              ) : (
-                <MenuRoundedIcon className="" fontSize="large" />
-              )}
-            </MenubarTrigger>
-          </MenubarMenu>
+    <Menubar className="border border-none  ">
+      <div className="flex justify-between px-15 py-10 fixed top-0 right-0 left-0 mask-b-from-sky-100  bg-amber-600">
+        <h1 className="text-xl font-bold">M3k!</h1>
+        <div className="flex ">
+          <div className="flex ml-5 gap-6">
+            <MenubarMenu>
+              <MenubarTrigger onClick={() => setOpen(!open)}>
+                {open ? (
+                  <ClearRoundedIcon className=" " fontSize="large" />
+                ) : (
+                  <MenuRoundedIcon className="" fontSize="large" />
+                )}
+              </MenubarTrigger>
+            </MenubarMenu>
+          </div>
         </div>
       </div>
 

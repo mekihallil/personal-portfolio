@@ -1,10 +1,11 @@
 import type { Config } from "tailwindcss";
+/** @type {import('tailwindcss').Config} */
 
 export default {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
     },
   },
