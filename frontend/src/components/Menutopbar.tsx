@@ -1,6 +1,5 @@
 import { Menubar, MenubarMenu, MenubarTrigger } from "@/components/ui/menubar";
 import ClearRoundedIcon from "@mui/icons-material/ClearRounded";
-import DesktopMacRoundedIcon from "@mui/icons-material/DesktopMacRounded";
 import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import NightsStayRoundedIcon from "@mui/icons-material/NightsStayRounded";
@@ -25,14 +24,11 @@ export const Menutopbar: FC = (): ReactElement => {
         <div className="flex ">
           <div className="flex ml-5 gap-2">
             <MenubarMenu>
-              <MenubarTrigger>
-                <DesktopMacRoundedIcon />
-              </MenubarTrigger>
               <MenubarTrigger onClick={() => setMode(!mode)}>
                 {mode ? (
-                  <NightsStayRoundedIcon fontSize="medium" />
-                ) : (
                   <LightModeRoundedIcon fontSize="medium" />
+                ) : (
+                  <NightsStayRoundedIcon fontSize="medium" />
                 )}
               </MenubarTrigger>
 
