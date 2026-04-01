@@ -1,22 +1,46 @@
 import { Menubar, MenubarMenu, MenubarTrigger } from "@/components/ui/menubar";
 import ClearRoundedIcon from "@mui/icons-material/ClearRounded";
+import DesktopMacRoundedIcon from "@mui/icons-material/DesktopMacRounded";
+import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
-import { useState, type FC, type ReactElement } from "react";
+import NightsStayRoundedIcon from "@mui/icons-material/NightsStayRounded";
+import { useEffect, useState, type FC, type ReactElement } from "react";
+
 export const Menutopbar: FC = (): ReactElement => {
   const [open, setOpen] = useState(false);
+  const [mode, setMode] = useState(true);
+
+  useEffect(() => {
+    if (mode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [mode]);
 
   return (
     <Menubar className="border border-none  ">
-      <div className="flex justify-between px-15 py-10 fixed top-0 right-0 left-0 mask-b-from-sky-100  bg-amber-600">
+      <div className="flex justify-between px-15 py-10 fixed top-0 right-0 left-0 mask-b-from-sky-100  bg-[#0a1c4e]">
         <h1 className="text-xl font-bold">M3k!</h1>
         <div className="flex ">
-          <div className="flex ml-5 gap-6">
+          <div className="flex ml-5 gap-2">
             <MenubarMenu>
+              <MenubarTrigger>
+                <DesktopMacRoundedIcon />
+              </MenubarTrigger>
+              <MenubarTrigger onClick={() => setMode(!mode)}>
+                {mode ? (
+                  <NightsStayRoundedIcon fontSize="medium" />
+                ) : (
+                  <LightModeRoundedIcon fontSize="medium" />
+                )}
+              </MenubarTrigger>
+
               <MenubarTrigger onClick={() => setOpen(!open)}>
                 {open ? (
-                  <ClearRoundedIcon className=" " fontSize="large" />
+                  <ClearRoundedIcon fontSize="large" />
                 ) : (
-                  <MenuRoundedIcon className="" fontSize="large" />
+                  <MenuRoundedIcon fontSize="large" />
                 )}
               </MenubarTrigger>
             </MenubarMenu>
