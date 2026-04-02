@@ -18,25 +18,31 @@ export const Menutopbar: FC = (): ReactElement => {
   }, [mode]);
 
   return (
-    <Menubar className="border border-none  ">
-      <div className="flex justify-between px-15 py-10 fixed top-0 right-0 left-0 mask-b-from-sky-100  bg-[#0a1c4e]">
+    <Menubar className="border border-none  dark:text-white ">
+      <div className="flex justify-between pl-22 pr-18 py-6 fixed top-0 right-0 left-0 mask-b-from-sky-100 text-white mask-b-from-10%  bg-[#0a1c4e]">
         <h1 className="text-xl font-bold">M3k!</h1>
         <div className="flex ">
           <div className="flex ml-5 gap-2">
             <MenubarMenu>
               <MenubarTrigger onClick={() => setMode(!mode)}>
                 {mode ? (
-                  <LightModeRoundedIcon fontSize="medium" />
+                  <LightModeRoundedIcon
+                    sx={{ fontSize: 40 }}
+                    fontSize="medium"
+                  />
                 ) : (
-                  <NightsStayRoundedIcon fontSize="medium" />
+                  <NightsStayRoundedIcon
+                    sx={{ fontSize: 40 }}
+                    fontSize="medium"
+                  />
                 )}
               </MenubarTrigger>
 
               <MenubarTrigger onClick={() => setOpen(!open)}>
                 {open ? (
-                  <ClearRoundedIcon fontSize="large" />
+                  <ClearRoundedIcon sx={{ fontSize: 40 }} />
                 ) : (
-                  <MenuRoundedIcon fontSize="large" />
+                  <MenuRoundedIcon sx={{ fontSize: 40 }} />
                 )}
               </MenubarTrigger>
             </MenubarMenu>
@@ -50,7 +56,7 @@ export const Menutopbar: FC = (): ReactElement => {
             className="absolute top-6 right-6 text-white"
             onClick={() => setOpen(false)}
           >
-            <ClearRoundedIcon className="mx-11 my-4" fontSize="large" />
+            <ClearRoundedIcon className="mx-13 my-1" sx={{ fontSize: 40 }} />
           </button>
           <ul className="text-white text-6xl space-y-6 text-center">
             <li className="cursor-pointer hover:text-gray-400">

@@ -10,7 +10,7 @@ import { Project } from "@/components/Project";
 import type { FC, ReactElement } from "react";
 export const Dashboard: FC = (): ReactElement => {
   return (
-    <>
+    <div className="dark:bg-[#070C17] dark:text-white bg-white text-[#070C17]">
       <Menutopbar />
       <Introsection />
       <Aboutme />
@@ -19,6 +19,6 @@ export const Dashboard: FC = (): ReactElement => {
       <Project />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 };

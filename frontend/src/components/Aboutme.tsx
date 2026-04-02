@@ -10,7 +10,7 @@ import {
 export const Aboutme = () => {
   return (
     <>
-      <div className="flex h-160  mb-25">
+      <div className="flex h-full mb-25">
         {/* paragraph about me   */}
         <div className="w-1/2 text-2xl pt-10">
           <div className="grid  h-full ">
@@ -29,7 +29,7 @@ export const Aboutme = () => {
             })}
             <h4 className="ml-3 flex  justify-center">
               <i>
-                <q className="playwrite border-b-4 border-l-2 border-white rounded-3xl text-xl  ">
+                <q className="playwrite border-b-4 border-l-2 border-[#0a1c4e] dark:border-white rounded-3xl text-xl  ">
                   Community is the heart of growth and development.
                 </q>
               </i>

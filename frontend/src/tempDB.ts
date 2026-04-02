@@ -2,6 +2,8 @@ import EngineeringRoundedIcon from "@mui/icons-material/EngineeringRounded";
 import HomeRepairServiceRoundedIcon from "@mui/icons-material/HomeRepairServiceRounded";
 import PersonIcon from "@mui/icons-material/Person";
 import SchoolRoundedIcon from "@mui/icons-material/SchoolRounded";
+
+// About me DB
 type aboutData = {
   id: number;
   title: string;

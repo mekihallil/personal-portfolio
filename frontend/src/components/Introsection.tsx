@@ -4,7 +4,7 @@ export const Introsection = () => {
   return (
     <>
       <div className="h-130">
-        <div className="flex gap-6 mx-14 my-28">
+        <div className="flex gap-6 mx-14 my-35">
           {/* introduction */}
           <div className="text w-3/5 h-auto  ">
             <div className="text-5xl">Hello</div>
@@ -20,14 +20,14 @@ export const Introsection = () => {
                 in
               </a>
               <a href="" className="">
-                Github
+                <img src="../comp" alt="" />
               </a>
             </div>
             <div className="flex gap-5 ">
-              <button className="border-2 border-black  w-38 h-13  rounded-[10px]">
+              <button className="border-2 border-[#780FFF]  w-38 h-13  rounded-[10px]">
                 Let's Talk
               </button>
-              <button className="border-2 border-black w-38 h-13  rounded-[10px]">
+              <button className="border-2 border-[#780FFF] w-38 h-13  rounded-[10px]">
                 Download CV
               </button>
             </div>
