@@ -27,12 +27,12 @@ export const Menutopbar: FC = (): ReactElement => {
               <MenubarTrigger onClick={() => setMode(!mode)}>
                 {mode ? (
                   <LightModeRoundedIcon
-                    sx={{ fontSize: 40 }}
+                    sx={{ fontSize: 30 }}
                     fontSize="medium"
                   />
                 ) : (
                   <NightsStayRoundedIcon
-                    sx={{ fontSize: 40 }}
+                    sx={{ fontSize: 30 }}
                     fontSize="medium"
                   />
                 )}

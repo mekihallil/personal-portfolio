@@ -12,7 +12,7 @@ export const Introsection = () => {
             <div className="text-3xl ">
               I build systems that don't build systems that don't build{" "}
             </div>
-            <div className="flex gap-4 py-7">
+            <div className="flex gap-4 py-7 w-25 ">
               <a href="" className="">
                 <MailOutlineRoundedIcon />
               </a>
@@ -20,7 +20,7 @@ export const Introsection = () => {
                 in
               </a>
               <a href="" className="">
-                <img src="../comp" alt="" />
+                <img className="bg-white  rounded-3xl" src="" alt="" />
               </a>
             </div>
             <div className="flex gap-5 ">

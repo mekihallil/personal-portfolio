@@ -43,7 +43,7 @@ export const Aboutme = () => {
               const Icon = a.icon;
               return (
                 <div>
-                  <Card className="h-54  bg-amber-400 rounded-3xl " key={a.id}>
+                  <Card className="h-54 bg-transparent border-white rounded-3xl " key={a.id}>
                     <CardHeader>
                       <CardTitle className=" h-1/3 text-6xl  flex justify-center ">
                         {a.id === 4 ? (
