@@ -21,7 +21,7 @@ export const Aboutme = () => {
             {aboutTextData.map((b) => {
               return (
                 <div className="" key={b.id}>
-                  <p className="pl-10 text-[19px] text-center ">
+                  <p className="pl-10 text-[16px] text-center ">
                     {b.description}
                   </p>
                 </div>
@@ -43,13 +43,21 @@ export const Aboutme = () => {
               const Icon = a.icon;
               return (
                 <div>
-                  <Card className="h-54 bg-transparent border-white rounded-3xl " key={a.id}>
+                  <Card
+                    className="h-54 bg-transparent border-white rounded-3xl "
+                    key={a.id}
+                  >
                     <CardHeader>
-                      <CardTitle className=" h-1/3 text-6xl  flex justify-center ">
+                      <CardTitle className="h-1/3 text-6xl flex justify-center ">
                         {a.id === 4 ? (
-                          a.title
+                          <div className="text-[#780FFF] font-semibold text-7xl pt-3">
+                            {a.title}
+                          </div>
                         ) : (
-                          <Icon style={{ fontSize: 80 }} />
+                          <Icon
+                            style={{ fontSize: 80 }}
+                            sx={{ color: ["#780FFF"], text: ["#780FFF"] }}
+                          />
                         )}
                       </CardTitle>
                       <CardContent className="h-1/3 flex justify-center text-3xl">
@@ -57,7 +65,7 @@ export const Aboutme = () => {
                           {a.id === 4 ? (
                             "Project"
                           ) : a.id === 1 ? (
-                            <div className="text-xl">{a.title}</div>
+                            <div className="text-xl  ">{a.title}</div>
                           ) : (
                             a.title
                           )}

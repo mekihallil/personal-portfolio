@@ -22,14 +22,14 @@ import vscodeIcon from "../icons/vscode.svg";
 export const Myskill = () => {
   return (
     <>
-      <div className="h-full pl-22 mt-50 ">
+      <div className="h-full mx-24 mt-50 ">
         <div>
           <div className="flex flex-col">
             <p className="text-[20px] font-semibold">SKILLS</p>
-            <h1 className="text-6xl pt-2 text-[#780FFF] font-semibold">
+            <h1 className="text-7xl pt-2 text-[#780FFF] text-gradient font-semibold">
               My Skills
             </h1>
-            <p className="mt-4 text-[1.6rem] md:max-w-2xl font-semibold">
+            <p className="mt-4 text-[1.6rem] md:w-2xl font-semibold">
               I have production-level experience in crafting aesthetic user
               experiences with modern frontend architecture, knowing when to use
               the right tools.
@@ -42,7 +42,11 @@ export const Myskill = () => {
                 CORE TECHNOLOGIES
               </h1>
               <div className="flex gap-6 ">
-                <img className="w-12" src={htmlIcon} alt="" />
+                <img
+                  className="hover:animate-vibrate hover:-translate-z-12 hover:rotate-x-50 hover:rotate-z-45 w-12"
+                  src={htmlIcon}
+                  alt=""
+                />
                 <img className="w-12" src={cssIcon} alt="" />
                 <img className="w-12" src={javascriptIcon} alt="" />
                 <img className="w-12" src={typescriptIcon} alt="" />
@@ -68,7 +72,7 @@ export const Myskill = () => {
             </div>
             <div className="my-10">
               <h1 className="mb-4 text-[20px] font-semibold">
-                BACKEND DEVELOPMENTx
+                BACKEND DEVELOPMENT
               </h1>
               <div className="flex gap-6 ">
                 <img className="w-12 " src={nodeIcon} alt="" />
@@ -90,7 +94,11 @@ export const Myskill = () => {
               </h1>
               <div className="flex gap-6 ">
                 <img className="w-12 " src={gitIcon} alt="" />
-                <img className="w-12 bg-white rounded-[100%] " src={githubIcon} alt="" />
+                <img
+                  className="w-12 bg-white rounded-[100%] "
+                  src={githubIcon}
+                  alt=""
+                />
                 <img className="w-12 rounded-xl" src={postmanIcon} alt="" />
                 <img className="w-12 " src={vscodeIcon} alt="" />
               </div>
