@@ -10,13 +10,13 @@ import { Project } from "@/components/Project";
 import type { FC, ReactElement } from "react";
 export const Dashboard: FC = (): ReactElement => {
   return (
-    <div className="dark:bg-[#070C17] dark:text-white bg-white text-[#070C17]">
+    <div className="dark:bg-[#070C17] dark:text-white bg-white text-[#070C17] font-['Miranda_Sans']">
       <Menutopbar />
       <Introsection />
       <Aboutme />
       <Myskill />
-      <Experience />
       <Project />
+      <Experience />
       <Contact />
       <Footer />
     </div>

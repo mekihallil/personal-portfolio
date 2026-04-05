@@ -1,17 +1,22 @@
+import helloeIcon from "@/icons/hello.webp";
 import MailOutlineRoundedIcon from "@mui/icons-material/MailOutlineRounded";
 
 export const Introsection = () => {
   return (
     <>
-      <div className="h-130 font-['Miranda_Sans']">
+      <div className="h-130 ">
+        <div></div>
         <div className="flex gap-6 mx-22 my-35">
           {/* introduction */}
           <div className="text w-3/5 h-auto  ">
-            <div className="text-5xl">Hello</div>
+            <div className="flex text-5xl text-[#780FFF] font-semibold">
+              <h1>Hello</h1>
+              <img className="ml-4 w-12" src={helloeIcon} alt="" />
+            </div>
             <div className="font-semibold text-7xl py-3">
-              <h1 className="text-6xl font-bold text-white">
+              <h1 className="text-6xl font-bold">
                 I am
-                <span className="relative mx-7 shadow-lg">Meki</span>
+                <span className=" mx-7 ">Meki</span>
                 Hallil
               </h1>
             </div>

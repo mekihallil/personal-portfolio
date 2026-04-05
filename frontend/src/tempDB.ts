@@ -18,19 +18,20 @@ export const aboutData: aboutData[] = [
   {
     id: 1,
     title: "Featured Problem Solving Project",
-    description: "Experience",
+    description: "Click to access this problem-solving project",
     icon: EngineeringRoundedIcon,
   },
   {
     id: 2,
     title: "Education",
-    description: "Clients Clients Clients Clients Clients Clients Clients",
+    description:
+      "BSc, Computer Science  Nov 2024 -Ongoing - St. Mary University",
     icon: SchoolRoundedIcon,
   },
   {
     id: 3,
     title: "Experience",
-    description: "Experience",
+    description: "1 year of experience building and learning programming skills",
     icon: HomeRepairServiceRoundedIcon,
   },
   {
@@ -50,5 +51,43 @@ export const aboutTextData: aboutTextData[] = [
     id: 2,
     description:
       "I believe consistent practice and continuous learning are key to growth in technology. I improve my skills by building projects, exploring new tools, and strengthening both frontend and backend development. My goal is to become a professional developer who contributes to impactful projects and succeeds in global tech opportunities.",
+  },
+];
+
+type projectType = {
+  id: number;
+  title: string;
+  status: string;
+};
+export const projectCard: projectType[] = [
+  {
+    id: 1,
+    title: "Coming Soon",
+    status: "..............",
+  },
+  {
+    id: 2,
+    title: "Coming Soon",
+    status: "..............",
+  },
+  {
+    id: 3,
+    title: "Coming Soon",
+    status: "..............",
+  },
+  {
+    id: 4,
+    title: "Coming Soon",
+    status: "..............",
+  },
+  {
+    id: 5,
+    title: "Coming Soon",
+    status: "..............",
+  },
+  {
+    id: 6,
+    title: "Coming Soon",
+    status: "..............",
   },
 ];
