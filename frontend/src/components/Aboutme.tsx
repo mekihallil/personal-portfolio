@@ -1,4 +1,4 @@
-import { aboutData, aboutTextData } from "@/tempDB";
+import { aboutData, aboutTextData } from "@/components/config/tempDB";
 import {
   Card,
   CardContent,

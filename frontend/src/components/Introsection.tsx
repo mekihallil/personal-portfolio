@@ -5,8 +5,7 @@ export const Introsection = () => {
   return (
     <>
       <div className="h-130 ">
-        <div></div>
-        <div className="flex gap-6 mx-22 my-35">
+        <div className="flex gap-6 mx-22 my-40">
           {/* introduction */}
           <div className="text w-3/5 h-auto  ">
             <div className="flex text-5xl text-[#780FFF] font-semibold">
@@ -44,7 +43,7 @@ export const Introsection = () => {
             </div>
           </div>
           {/* animation  */}
-          <div className=" w-2/5 bg-blue-700 ">image</div>
+          <div className=" w-2/5 bg-blue-700 ">imagfe</div>
         </div>
       </div>
     </>

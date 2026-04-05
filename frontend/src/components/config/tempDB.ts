@@ -91,3 +91,78 @@ export const projectCard: projectType[] = [
     status: "..............",
   },
 ];
+
+type experiance ={
+  id:number
+  date:number
+  title:string
+  icon:React.ElementType
+  description:string
+}
+
+export const experinace:experiance[]=[
+  {
+    id:1,
+    date:2025,
+    title:"Junior Full Stack Developer",
+    icon:PersonIcon,
+    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed."
+  },
+  {
+    id:2,
+    date:2024,
+    title:"Frontend develper",
+    icon:PersonIcon,
+    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed."
+  },
+  {
+    id:3,
+    date:2023,
+    title:"Junior Full Stack Developer",
+    icon:PersonIcon,
+    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed."
+  },
+  {
+    id:3,
+    date:2023,
+    title:"Frontend develper",
+    icon:PersonIcon,
+    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed."
+  },
+  {
+    id:3,
+    date:2023,
+    title:"Junior Full Stack Developer",
+    icon:PersonIcon,
+    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed."
+  },
+  {
+    id:3,
+    date:2023,
+    title:"Frontend develper",
+    icon:PersonIcon,
+    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed."
+  },
+  {
+    id:3,
+    date:2023,
+    title:"Junior Full Stack Developer",
+    icon:PersonIcon,
+    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed."
+  },
+  {
+    id:3,
+    date:2023,
+    title:"Frontend develper",
+    icon:PersonIcon,
+    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed."
+  },
+  {
+    id:3,
+    date:2023,
+    title:"Junior Full Stack Developer",
+    icon:PersonIcon,
+    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed."
+  },
+ 
+]

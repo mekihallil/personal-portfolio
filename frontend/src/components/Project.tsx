@@ -1,5 +1,5 @@
+import { projectCard } from "@/components/config/tempDB";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import { projectCard } from "@/tempDB";
 
 export interface Artwork {
   artist: string;
@@ -11,9 +11,9 @@ export const Project = () => {
     <>
       <div className="h-svh   mt-50">
         <div className="ml-22 mb-10">
-          <p className="text-[20px] font-semibold">WORKS</p>
+          <p className="text-[20px] font-semibold">PROJECTS</p>
           <h1 className="text-6xl pt-2 text-[#780FFF] text-gradient font-semibold">
-            My Works
+            My Projects
           </h1>
           <p className="mt-4 text-[1.6rem] w-xl font-semibold">
             I have production-level experience in crafting aesthetic user
@@ -28,8 +28,7 @@ export const Project = () => {
                   <figure className="shrink-0 w-180 h-110 bg-transparent border-4 rounded-4xl">
                     <figcaption className="relative grid place-content-center h-full text-5xl t-2   text-muted-foreground">
                       {c.title}
-                      <span className="flex align-bottom font-semibold text-foreground ">
-                      </span>
+                      <span className="flex align-bottom font-semibold text-foreground "></span>
                     </figcaption>
                   </figure>
                 );
