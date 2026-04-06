@@ -43,7 +43,7 @@ export const Introsection = () => {
             </div>
           </div>
           {/* animation  */}
-          <div className=" w-2/5 bg-blue-700 ">imagfe</div>
+          <div className=" w-2/5 h-100 border-2 border-gray-500 rounded-2xl "></div>
         </div>
       </div>
     </>
