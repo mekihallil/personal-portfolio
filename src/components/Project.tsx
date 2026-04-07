@@ -9,7 +9,7 @@ export interface Artwork {
 export const Project = () => {
   return (
     <>
-      <div className="h-svh   mt-50">
+      <div className="h-svh mt-30">
         <div className="ml-22 mb-10">
           <p className="text-[20px] font-semibold">PROJECTS</p>
           <h1 className="text-6xl pt-2 text-[#780FFF] text-gradient font-semibold">

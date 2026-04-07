@@ -1,4 +1,6 @@
 import helloeIcon from "@/icons/hello.webp";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailOutlineRoundedIcon from "@mui/icons-material/MailOutlineRounded";
 
 export const Introsection = () => {
@@ -23,15 +25,27 @@ export const Introsection = () => {
               I build systems that don't build systems that don't
             </div>
             <div className="flex gap-4 py-7 w-25 ">
-              <a href="" className="">
+              <a href="#" target="_blank" className="">
                 <MailOutlineRoundedIcon />
               </a>
-              <a href="" className="">
-                in
+              <a
+                href="https://www.linkedin.com/in/meki-hallil/"
+                target="_blank"
+                className=""
+              >
+                <LinkedInIcon />
               </a>
-              <a href="" className="">
-                <img className="bg-white  rounded-3xl" src="" alt="" />
+
+              <a href="https://github.com/mekihallil" target="_blank">
+                <GitHubIcon />
               </a>
+              {/* <a
+                href="https://t.me/meki_hallil"
+                target="_blank"
+                className="-rotate-45"
+              >
+                <SendRoundedIcon />
+              </a> */}
             </div>
             <div className="flex gap-5 ">
               <button className="border-2 border-[#780FFF]  w-38 h-13  rounded-[10px]">

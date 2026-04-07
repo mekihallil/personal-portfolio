@@ -90,11 +90,7 @@ export const Myskill = () => {
               </h1>
               <div className="flex gap-6 ">
                 <img className="w-12 " src={gitIcon} alt="" />
-                <img
-                  className="w-12 bg-white rounded-[100%] "
-                  src={githubIcon}
-                  alt=""
-                />
+                <img className="w-12 rounded-[100%] " src={githubIcon} alt="" />
                 <img className="w-12 rounded-xl" src={postmanIcon} alt="" />
                 <img className="w-12 " src={vscodeIcon} alt="" />
               </div>

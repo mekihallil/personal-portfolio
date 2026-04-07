@@ -37,21 +37,23 @@ export const Experience = () => {
                       <circle className="absolute -left-2 top-1 w-3.5 h-3.5 border-2 border-gray-400 rounded-full"></circle>
                     </div>
                   </section>
-                  <section>
-                    <div className="relative -top-50 pl-5 ">
-                      <h1 className="text-6xl font-semibold">{e.date}</h1>
-                    </div>
-                  </section>
-                  <section>
-                    <div className="relative -top-15 pl-5 ">
-                      <h1 className="text-2xl">
-                        <Icon style={{fontSize:50}}/>
-                      </h1>
-                      <p className="text-2xl font-semibold px-5">{e.title}</p>
-                      <h1 className="text-xl w-100 font-normal">
-                        {e.description}
-                      </h1>
-                    </div>
+                  <section className="h-64 w-100">
+                    <section>
+                      <div className="relative -top-50 pl-5 ">
+                        <h1 className="text-6xl font-semibold">{e.date}</h1>
+                      </div>
+                    </section>
+                    <section>
+                      <div className="relative -top-15 pl-5 ">
+                        <h1 className="text-2xl">
+                          <Icon style={{ fontSize: 50 }} />
+                        </h1>
+                        <p className="text-2xl font-semibold px-5">{e.title}</p>
+                        <h1 className="text-xl w-100 font-normal">
+                          {e.description}
+                        </h1>
+                      </div>
+                    </section>
                   </section>
                 </div>
               );

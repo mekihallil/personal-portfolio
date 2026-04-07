@@ -3,7 +3,7 @@ import HomeRepairServiceRoundedIcon from "@mui/icons-material/HomeRepairServiceR
 import PersonIcon from "@mui/icons-material/Person";
 import SchoolRoundedIcon from "@mui/icons-material/SchoolRounded";
 
-// About me DB
+// *********************About me data***********************************//
 type aboutData = {
   id: number;
   title: string;
@@ -31,7 +31,8 @@ export const aboutData: aboutData[] = [
   {
     id: 3,
     title: "Experience",
-    description: "1 year of experience building and learning programming skills",
+    description:
+      "1 year of experience building and learning programming skills",
     icon: HomeRepairServiceRoundedIcon,
   },
   {
@@ -54,6 +55,7 @@ export const aboutTextData: aboutTextData[] = [
   },
 ];
 
+// *********************project data***********************************//
 type projectType = {
   id: number;
   title: string;
@@ -92,77 +94,94 @@ export const projectCard: projectType[] = [
   },
 ];
 
-type experiance ={
-  id:number
-  date:number
-  title:string
-  icon:React.ElementType
-  description:string
-}
+// *********************experiance data***********************************//
+type experiance = {
+  id: number;
+  date: number;
+  title: string;
+  icon: React.ElementType;
+  description: string;
+};
 
-export const experinace:experiance[]=[
+export const experinace: experiance[] = [
   {
-    id:1,
-    date:2025,
-    title:"Junior Full Stack Developer",
-    icon:PersonIcon,
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed."
+    id: 1,
+    date: 2025,
+    title: "Junior Full Stack Developer",
+    icon: PersonIcon,
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed.",
   },
   {
-    id:2,
-    date:2024,
-    title:"Frontend develper",
-    icon:PersonIcon,
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed."
+    id: 2,
+    date: 2024,
+    title: "Frontend develper",
+    icon: PersonIcon,
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed.",
   },
   {
-    id:3,
-    date:2023,
-    title:"Junior Full Stack Developer",
-    icon:PersonIcon,
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed."
+    id: 3,
+    date: 2023,
+    title: "Junior Full Stack Developer",
+    icon: PersonIcon,
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed.",
   },
   {
-    id:3,
-    date:2023,
-    title:"Frontend develper",
-    icon:PersonIcon,
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed."
+    id: 3,
+    date: 2023,
+    title: "Frontend develper",
+    icon: PersonIcon,
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed.",
   },
   {
-    id:3,
-    date:2023,
-    title:"Junior Full Stack Developer",
-    icon:PersonIcon,
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed."
+    id: 3,
+    date: 2023,
+    title: "Junior Full Stack Developer",
+    icon: PersonIcon,
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed.",
   },
   {
-    id:3,
-    date:2023,
-    title:"Frontend develper",
-    icon:PersonIcon,
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed."
+    id: 3,
+    date: 2023,
+    title: "Frontend develper",
+    icon: PersonIcon,
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed.",
   },
   {
-    id:3,
-    date:2023,
-    title:"Junior Full Stack Developer",
-    icon:PersonIcon,
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed."
+    id: 3,
+    date: 2023,
+    title: "Junior Full Stack Developer",
+    icon: PersonIcon,
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed.",
   },
   {
-    id:3,
-    date:2023,
-    title:"Frontend develper",
-    icon:PersonIcon,
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed."
+    id: 3,
+    date: 2023,
+    title: "Frontend develper",
+    icon: PersonIcon,
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed.",
   },
   {
-    id:3,
-    date:2023,
-    title:"Junior Full Stack Developer",
-    icon:PersonIcon,
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed."
+    id: 3,
+    date: 2023,
+    title: "Junior Full Stack Developer",
+    icon: PersonIcon,
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed.",
   },
- 
-]
+  {
+    id: 3,
+    date: 2023,
+    title: "Junior Full Stack Developer",
+    icon: PersonIcon,
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed.",
+  },
+];
