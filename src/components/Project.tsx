@@ -1,12 +1,13 @@
 import { projectCard } from "@/components/config/tempDB";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import type { FC, ReactElement } from "react";
 
 export interface Artwork {
   artist: string;
   art: string;
 }
 
-export const Project = () => {
+export const Project: FC = (): ReactElement => {
   return (
     <>
       <div className="h-svh mt-30">

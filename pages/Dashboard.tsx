@@ -2,7 +2,7 @@ import { Aboutme } from "@/components/Aboutme";
 import { Contact } from "@/components/Contact";
 import { Experience } from "@/components/Experience";
 import { Footer } from "@/components/Footerpage";
-import { Introsection } from "@/components/Introsection";
+import { Home } from "@/components/Home";
 import { Menutopbar } from "@/components/Menutopbar";
 import { Myskill } from "@/components/Myskill";
 import { Project } from "@/components/Project";
@@ -12,7 +12,7 @@ export const Dashboard: FC = (): ReactElement => {
   return (
     <div className="dark:bg-[#070C17] dark:text-white bg-white text-[#070C17] font-['Miranda_Sans']">
       <Menutopbar />
-      <Introsection />
+      <Home />
       <Aboutme />
       <Myskill />
       <Project />

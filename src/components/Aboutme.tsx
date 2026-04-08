@@ -6,7 +6,8 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-export const Aboutme = () => {
+import type { FC, ReactElement } from "react";
+export const Aboutme: FC = (): ReactElement => {
   return (
     <>
       <div className="flex h-full mb-25">

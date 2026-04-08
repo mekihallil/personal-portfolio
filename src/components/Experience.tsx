@@ -1,6 +1,7 @@
+import type { FC, ReactElement } from "react";
 import { experinace } from "./config/tempDB";
 
-export const Experience = () => {
+export const Experience: FC = (): ReactElement => {
   return (
     <>
       <section className="grid mt-30">

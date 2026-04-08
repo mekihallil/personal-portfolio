@@ -1,25 +1,26 @@
-import axiosIcon from "../icons/axios.svg";
-import cssIcon from "../icons/css.svg";
-import expressIcon from "../icons/express.jpeg";
-import gitIcon from "../icons/git.svg";
-import githubIcon from "../icons/GitHub.svg";
-import htmlIcon from "../icons/html.svg";
-import javascriptIcon from "../icons/javascript.svg";
-import jwtIcon from "../icons/jwt.svg";
-import mongodbIcon from "../icons/mongodb.svg";
-import mongooseIcon from "../icons/mongoose.svg";
-import nodeIcon from "../icons/node.svg";
-import postmanIcon from "../icons/postman.jpeg";
-import reactIcon from "../icons/react.webp";
-import restapiIcon from "../icons/restapi.png";
-import shadCnUiIcon from "../icons/shadcnui.svg";
-import tailwindCssIcon from "../icons/tailwindcss.svg";
-import tanStackIcon from "../icons/tanstack.svg";
-import typescriptIcon from "../icons/typescript.svg";
-import viteIcon from "../icons/vite.svg";
-import vscodeIcon from "../icons/vscode.svg";
+import type { FC, ReactElement } from "react";
+import axiosIcon from "../components/assets/icons/axios.svg";
+import cssIcon from "../components/assets/icons/css.svg";
+import expressIcon from "../components/assets/icons/express.jpeg";
+import gitIcon from "../components/assets/icons/git.svg";
+import githubIcon from "../components/assets/icons/GitHub.svg";
+import htmlIcon from "../components/assets/icons/html.svg";
+import javascriptIcon from "../components/assets/icons/javascript.svg";
+import jwtIcon from "../components/assets/icons/jwt.svg";
+import mongodbIcon from "../components/assets/icons/mongodb.svg";
+import mongooseIcon from "../components/assets/icons/mongoose.svg";
+import nodeIcon from "../components/assets/icons/node.svg";
+import postmanIcon from "../components/assets/icons/postman.jpeg";
+import reactIcon from "../components/assets/icons/react.webp";
+import restapiIcon from "../components/assets/icons/restapi.png";
+import shadCnUiIcon from "../components/assets/icons/shadcnui.svg";
+import tailwindCssIcon from "../components/assets/icons/tailwindcss.svg";
+import tanStackIcon from "../components/assets/icons/tanstack.svg";
+import typescriptIcon from "../components/assets/icons/typescript.svg";
+import viteIcon from "../components/assets/icons/vite.svg";
+import vscodeIcon from "../components/assets/icons/vscode.svg";
 
-export const Myskill = () => {
+export const Myskill: FC = (): ReactElement => {
   return (
     <>
       <div className="h-full mx-22 mt-70 ">

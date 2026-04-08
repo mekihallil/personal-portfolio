@@ -1,4 +1,6 @@
-export const Contact = () => {
+import type { FC, ReactElement } from "react";
+
+export const Contact: FC = (): ReactElement => {
   return (
     <>
       <div className="grid place-items-center mt-20">
