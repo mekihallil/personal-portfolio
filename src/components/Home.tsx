@@ -5,6 +5,7 @@ import MailOutlineRoundedIcon from "@mui/icons-material/MailOutlineRounded";
 import type { FC, ReactElement } from "react";
 import bollImage from "./assets/image/boll.svg";
 import pcImage from "./assets/image/pc.svg";
+import spinImage from "./assets/image/spin.png";
 
 export const Home: FC = (): ReactElement => {
   return (
@@ -60,14 +61,19 @@ export const Home: FC = (): ReactElement => {
             </div>
           </div>
           {/* animation  */}
-          <div className=" w-2/5 h-100  ">
-            <div className="">
-              <div className=" w-20 h-20 animate-[wiggle_1s_ease-in-out_infinite] mt-20 mb-20 ">
-                <img src={bollImage} alt="" />
+          <div className=" w-2/5 h-100  mt-50 ml-20">
+            <div>
+              <div className="w-100 ">
+                <img src={spinImage} alt="" />
               </div>
-            </div>
-            <div className="w-80 ml-30 my-auto ">
-              <img src={pcImage} alt="" />
+              <div className=" -mt-100">
+                <div className=" w-20 h-20 animate-bounce mt-20 mb-20 ">
+                  <img src={bollImage} alt="" />
+                </div>
+              </div>
+              <div className="w-100 ml-10  -mt-70">
+                <img src={pcImage} alt="" />
+              </div>
             </div>
           </div>
         </div>
