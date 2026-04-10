@@ -10,7 +10,7 @@ import spinImage from "./assets/image/spin.png";
 export const Home: FC = (): ReactElement => {
   return (
     <>
-      <div className="h-130 mb-40">
+      <div id="home" className="h-130 mb-40">
         <div className="flex gap-6 mx-22 ">
           {/* introduction */}
           <div className="text w-3/5 h-auto my-40 ">
@@ -61,17 +61,15 @@ export const Home: FC = (): ReactElement => {
             </div>
           </div>
           {/* animation  */}
-          <div className=" w-2/5 h-100  mt-50 ml-20">
+          <div className=" w-2/5 h-100  pt-45 pl-20">
             <div>
-              <div className="w-100 ">
+              <div className="w-90 ">
                 <img src={spinImage} alt="" />
               </div>
-              <div className=" -mt-100">
-                <div className=" w-20 h-20 animate-bounce mt-20 mb-20 ">
-                  <img src={bollImage} alt="" />
-                </div>
+              <div className=" w-20 h-20 animate-bounce -mt-110  pb-25  ">
+                <img src={bollImage} alt="" />
               </div>
-              <div className="w-100 ml-10  -mt-70">
+              <div className="w-90 ml-6 ">
                 <img src={pcImage} alt="" />
               </div>
             </div>

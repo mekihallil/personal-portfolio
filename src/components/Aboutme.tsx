@@ -1,4 +1,5 @@
 import { aboutData, aboutTextData } from "@/components/config/tempDB";
+import type { FC, ReactElement } from "react";
 import {
   Card,
   CardContent,
@@ -6,11 +7,10 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-import type { FC, ReactElement } from "react";
 export const Aboutme: FC = (): ReactElement => {
   return (
     <>
-      <div className="flex h-full mb-25">
+      <div id="aboutme" className="flex h-full mb-25">
         {/* paragraph about me   */}
         <div className="w-1/2 text-2xl pt-10">
           <div className="grid  h-full ">
@@ -25,19 +25,18 @@ export const Aboutme: FC = (): ReactElement => {
             {aboutTextData.map((b) => {
               return (
                 <div className="ml-22" key={b.id}>
-                  <p className="pl-10 text-[18px] text-center ">
-                    {b.description}
-                  </p>
+                  <p className="pl-10 text-[18px]  ">{b.description}</p>
                 </div>
               );
             })}
-            <h4 className="ml-3 flex  justify-center">
+            {/* <h4 className="ml-3 flex  justify-center">
+              I believe:- 
               <i>
                 <q className="playwrite border-b-4 border-l-2 border-[#0a1c4e] dark:border-white rounded-3xl text-xl  ">
-                  Community is the heart of growth and development.
+                  community is the heart of growth and development
                 </q>
               </i>
-            </h4>
+            </h4> */}
           </div>
         </div>
         {/* card about me  */}

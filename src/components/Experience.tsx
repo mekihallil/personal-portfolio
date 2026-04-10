@@ -4,7 +4,7 @@ import { experinace } from "./config/tempDB";
 export const Experience: FC = (): ReactElement => {
   return (
     <>
-      <section className="grid mt-30">
+      <section id="experience" className="grid mt-30">
         <div className=" mx-22 ">
           <p className="text-[20px] font-semibold">WORK</p>
           <h1 className="text-7xl pt-2 text-[#780FFF] text-gradient font-medium">

@@ -60,19 +60,29 @@ export const Menutopbar: FC = (): ReactElement => {
           </button>
           <ul className="text-white text-6xl space-y-6 text-center">
             <li className="cursor-pointer hover:text-gray-400">
-              <a href="Home">Home</a>
+              <a href="#home" onClick={() => setOpen(false)}>
+                Home
+              </a>
             </li>
             <li className="cursor-pointer hover:text-gray-400">
-              <a href="#">About Me</a>
+              <a href="#aboutme" onClick={() => setOpen(false)}>
+                About Me
+              </a>
             </li>
             <li className="cursor-pointer hover:text-gray-400">
-              <a href="#">Experience</a>
+              <a href="#experience" onClick={() => setOpen(false)}>
+                Experience
+              </a>
             </li>
             <li className="cursor-pointer hover:text-gray-400">
-              <a href="#">Projects</a>
+              <a href="#project" onClick={() => setOpen(false)}>
+                Projects
+              </a>
             </li>
             <li className="cursor-pointer hover:text-gray-400">
-              <a href="#">Contact</a>
+              <a href="#contact" onClick={() => setOpen(false)}>
+                Contact
+              </a>
             </li>
           </ul>
         </div>

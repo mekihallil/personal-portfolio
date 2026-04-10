@@ -2,6 +2,7 @@ import { Aboutme } from "@/components/Aboutme";
 import { Contact } from "@/components/Contact";
 import { Experience } from "@/components/Experience";
 import { Footer } from "@/components/Footerpage";
+import { HeroTagline } from "@/components/HeroTagline";
 import { Home } from "@/components/Home";
 import { Menutopbar } from "@/components/Menutopbar";
 import { Myskill } from "@/components/Myskill";
@@ -16,6 +17,7 @@ export const Dashboard: FC = (): ReactElement => {
       <Aboutme />
       <Myskill />
       <Project />
+      <HeroTagline />
       <Experience />
       <Contact />
       <Footer />
