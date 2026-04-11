@@ -52,10 +52,10 @@ export const Home: FC = (): ReactElement => {
               </a> */}
             </div>
             <div className="flex gap-5 ">
-              <button className="border-2 border-[#780FFF]  w-38 h-13  rounded-[10px]">
+              <button className="border-2 border-[#780FFF]  w-38 h-13 hover:bg-[#780FFF] hover:text-white rounded-[10px]">
                 Let's Talk
               </button>
-              <button className="border-2 border-[#780FFF] w-38 h-13  rounded-[10px]">
+              <button className="border-2 border-[#780FFF] w-38 h-13 hover:bg-[#780FFF] hover:text-white rounded-[10px]">
                 Download CV
               </button>
             </div>
