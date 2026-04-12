@@ -1,5 +1,5 @@
 import type { FC, ReactElement } from "react";
-import { experinace } from "./config/tempDB";
+import { experinace } from "../data/experiance";
 
 export const Experience: FC = (): ReactElement => {
   return (

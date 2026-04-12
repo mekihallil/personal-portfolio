@@ -1,5 +1,5 @@
-import { projectCard } from "@/components/config/tempDB";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import { projectCard } from "@/data/projectData";
 import type { FC, ReactElement } from "react";
 
 export interface Artwork {

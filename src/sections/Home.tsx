@@ -1,11 +1,12 @@
-import helloeIcon from "@/components/assets/icons/hello.webp";
+import helloeIcon from "@/assets/icons/hello.webp";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailOutlineRoundedIcon from "@mui/icons-material/MailOutlineRounded";
+import SendRoundedIcon from "@mui/icons-material/SendRounded";
 import type { FC, ReactElement } from "react";
-import bollImage from "./assets/image/boll.svg";
-import pcImage from "./assets/image/pc.svg";
-import spinImage from "./assets/image/spin.png";
+import bollImage from "../assets/image/boll.svg";
+import pcImage from "../assets/image/pc.svg";
+import spinImage from "../assets/image/spin.png";
 
 export const Home: FC = (): ReactElement => {
   return (
@@ -43,13 +44,13 @@ export const Home: FC = (): ReactElement => {
               <a href="https://github.com/mekihallil" target="_blank">
                 <GitHubIcon />
               </a>
-              {/* <a
+              <a
                 href="https://t.me/meki_hallil"
                 target="_blank"
-                className="-rotate-45"
+                className="-rotate-35"
               >
                 <SendRoundedIcon />
-              </a> */}
+              </a>
             </div>
             <div className="flex gap-5 ">
               <button className="border-2 border-[#780FFF]  w-38 h-13 hover:bg-[#780FFF] hover:text-white rounded-[10px]">

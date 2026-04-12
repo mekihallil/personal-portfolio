@@ -1,4 +1,4 @@
-import { aboutData, aboutTextData } from "@/components/config/tempDB";
+import { aboutData, aboutTextData } from "@/data/aboutData";
 import type { FC, ReactElement } from "react";
 import {
   Card,
@@ -6,8 +6,8 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "./ui/card";
-export const Aboutme: FC = (): ReactElement => {
+} from "../components/ui/card";
+export const About: FC = (): ReactElement => {
   return (
     <>
       <div id="aboutme" className="flex h-full mb-25">

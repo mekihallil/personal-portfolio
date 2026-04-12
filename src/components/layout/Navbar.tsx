@@ -5,7 +5,7 @@ import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import NightsStayRoundedIcon from "@mui/icons-material/NightsStayRounded";
 import { useEffect, useState, type FC, type ReactElement } from "react";
 
-export const Menutopbar: FC = (): ReactElement => {
+export const Navbar: FC = (): ReactElement => {
   const [open, setOpen] = useState(false);
   const [mode, setMode] = useState(true);
 
@@ -19,7 +19,7 @@ export const Menutopbar: FC = (): ReactElement => {
 
   return (
     <Menubar className="border border-none  dark:text-white ">
-      <div className="flex justify-between pl-22 pr-18 py-6 fixed top-0 right-0 left-0 mask-b-from-sky-100 text-white mask-b-from-10%  bg-[#0a1c4e]">
+      <div className="flex justify-between pl-22 pr-18 py-6 fixed top-0 right-0 left-0 mask-b-from-sky-100 dark:text-white  bg-[#e4e2e2] mask-b-from-10%  dark:bg-[#0a1c4e]">
         <h1 className="text-xl font-bold">M3k!</h1>
         <div className="flex ">
           <div className="flex ml-5 gap-2">
