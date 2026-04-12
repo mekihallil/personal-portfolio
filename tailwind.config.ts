@@ -6,6 +6,7 @@ export default {
     extend: {
       fontFamily: {
         inter: ["Miranda_Sans", "sans-serif"],
+        space: ['"Space Grotesk"', "sans-serif"],
       },
     },
     keyframes: {

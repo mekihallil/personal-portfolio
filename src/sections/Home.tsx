@@ -21,31 +21,31 @@ export const Home: FC = (): ReactElement => {
             <div className="font-semibold text-7xl py-3">
               <h1 className="text-6xl font-bold">
                 I am
-                <span className=" mx-7 ">Meki</span>
+                <span className=" mx-7 -pt-2">Meki</span>
                 Hallil
               </h1>
             </div>
-            <div className="text-3xl ">
+            <div className="">
               <TypeAnimation
                 sequence={[
-                  "Full-Stack Developer",
-                  2500,
+                  "Junior Full-Stack Developer",
+                  3000,
                   "Backend-Focused Engineer",
-                  2500,
+                  3000,
                   "Building Scalable and Maintainable Systems",
-                  2500,
+                  3000,
                   "Designing Secure and Efficient APIs",
-                  2500,
+                  3000,
                   "Focused on Clean Architecture and Best Practices",
-                  2500,
+                  3000,
                   "Turning Ideas into Functional Products",
-                  2500,
+                  3000,
                   "Continuously Learning and Improving",
-                  2500,
+                  3000,
                 ]}
                 speed={50}
                 repeat={Infinity}
-                className="text-3xl font"
+                className="text-3xl underline decoration-[#780FFF]"
               />
             </div>
             <div className="flex ">
@@ -70,7 +70,7 @@ export const Home: FC = (): ReactElement => {
                 whileTap={{ scale: 1 }}
                 className="border-2 border-[#780FFF]  w-38 h-13 hover:bg-[#780FFF] hover:text-white rounded-[10px]"
               >
-                Let's Talk
+                <a href="#contact">Let's Talk</a>
               </motion.button>
               <motion.button
                 whileHover={{ scale: 0.9 }}
