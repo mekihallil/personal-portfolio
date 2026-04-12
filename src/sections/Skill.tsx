@@ -29,8 +29,13 @@ export const Skill: FC = (): ReactElement => {
                     {icon.map((i) => {
                       return (
                         <motion.img
-                          whileHover={{ scale: 2 }}
-                          className="w-12"
+                          whileHover={{ scale: 2.5 }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 1000,
+                            damping: 15,
+                          }}
+                          className="w-12 "
                           key={m.id}
                           src={i}
                           alt=""
