@@ -25,10 +25,11 @@ export const Skill: FC = (): ReactElement => {
               return (
                 <div className="my-10" key={m.id}>
                   <h1 className="mb-4 text-[20px] font-semibold">{m.title}</h1>
-                  <div className="flex gap-6 border-none ">
+                  <div className="flex gap-6 border-none " key={m.id}>
                     {icon.map((i) => {
                       return (
                         <motion.img
+                          key={i}
                           whileHover={{ scale: 2.5 }}
                           transition={{
                             type: "spring",
@@ -36,7 +37,6 @@ export const Skill: FC = (): ReactElement => {
                             damping: 15,
                           }}
                           className="w-12 "
-                          key={m.id}
                           src={i}
                           alt=""
                         />

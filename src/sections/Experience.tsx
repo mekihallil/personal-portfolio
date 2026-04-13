@@ -20,22 +20,22 @@ export const Experience: FC = (): ReactElement => {
             {experinace.map((e) => {
               const Icon = e.icon;
               return (
-                <div className="-mt-14">
+                <div className="-mt-14" key={e.id}>
                   <section className="flex ">
                     <div className="relative">
-                      <line className="absolute right-1/2 bg-gray-400 border-2 h-100 w-0.5"></line>
+                      <div className="absolute right-1/2 bg-gray-400 border-2 h-100 w-0.5"></div>
                     </div>
                     <div className="relative h-50 bg-blue-400">
-                      <rect className="absolute rotate-45 -left-3  w-5.5 h-5.5 border-2 border-none bg-[#1d2f5a]"></rect>
-                      <circle className="absolute -left-2 top-1 w-3.5 h-3.5 border-2 border-gray-400 rounded-full"></circle>
+                      <div className="absolute rotate-45 -left-3  w-5.5 h-5.5 border-2 border-none bg-[#1d2f5a]"></div>
+                      <div className="absolute -left-2 top-1 w-3.5 h-3.5 border-2 border-gray-400 rounded-full"></div>
                     </div>
                     <div className="relative top-50 h-50 bg-blue-400">
-                      <rect className="absolute rotate-45 -left-3  w-5.5 h-5.5 border-2 border-none bg-[#1d2f5a]"></rect>
-                      <circle className="absolute -left-2 top-1 w-3.5 h-3.5 border-2 border-gray-400 rounded-full"></circle>
+                      <div className="absolute rotate-45 -left-3  w-5.5 h-5.5 border-2 border-none bg-[#1d2f5a]"></div>
+                      <div className="absolute -left-2 top-1 w-3.5 h-3.5 border-2 border-gray-400 rounded-full"></div>
                     </div>
                     <div className="relative top-100 h-50 bg-blue-400">
-                      <rect className="absolute rotate-45 -left-3  w-5.5 h-5.5 border-2 border-none bg-[#1d2f5a]"></rect>
-                      <circle className="absolute -left-2 top-1 w-3.5 h-3.5 border-2 border-gray-400 rounded-full"></circle>
+                      <div className="absolute rotate-45 -left-3  w-5.5 h-5.5 border-2 border-none bg-[#1d2f5a]"></div>
+                      <div className="absolute -left-2 top-1 w-3.5 h-3.5 border-2 border-gray-400 rounded-full"></div>
                     </div>
                   </section>
                   <section className="h-64 w-100">

@@ -26,7 +26,10 @@ export const Project: FC = (): ReactElement => {
             <div className=" flex  w-full  space-x-4 overflow-x-auto scroll-smooth  mx-22 gap-10 ">
               {projectCard.map((c) => {
                 return (
-                  <figure className="shrink-0 w-180 h-110 bg-transparent border-4 rounded-4xl">
+                  <figure
+                    className="shrink-0 w-180 h-110 bg-transparent border-4 rounded-4xl"
+                    key={c.id}
+                  >
                     <figcaption className="relative grid place-content-center h-full text-5xl t-2   text-muted-foreground">
                       {c.title}
                       <span className="flex align-bottom font-semibold text-foreground "></span>

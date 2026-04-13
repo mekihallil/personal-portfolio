@@ -5,32 +5,32 @@ type projectType = {
 };
 export const projectCard: projectType[] = [
   {
-    id: 1,
+    id: 331,
     title: "Coming Soon",
     status: "..............",
   },
   {
-    id: 2,
+    id: 332,
     title: "Coming Soon",
     status: "..............",
   },
   {
-    id: 3,
+    id: 333,
     title: "Coming Soon",
     status: "..............",
   },
   {
-    id: 4,
+    id: 334,
     title: "Coming Soon",
     status: "..............",
   },
   {
-    id: 5,
+    id: 335,
     title: "Coming Soon",
     status: "..............",
   },
   {
-    id: 6,
+    id: 336,
     title: "Coming Soon",
     status: "..............",
   },

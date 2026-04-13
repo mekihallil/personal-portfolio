@@ -1,14 +1,14 @@
-import { About } from "@/sections/About";
-import { Contact } from "@/sections/Contact";
-import { Experience } from "@/sections/Experience";
-import { Footer } from "@/components/layout/Footer";
-import { HeroTagline } from "@/sections/HeroTagline";
-import { Home } from "@/sections/Home";
-import { Navbar } from "@/components/layout/Navbar";
-import { Skill } from "@/sections/Skill";
-import { Project } from "@/sections/Project";
 import { motion, useScroll } from "motion/react";
 import type { FC, ReactElement } from "react";
+import { Footer } from "../components/layout/Footer";
+import { Navbar } from "../components/layout/Navbar";
+import { About } from "../sections/About";
+import { Contact } from "../sections/Contact";
+import { Experience } from "../sections/Experience";
+import { HeroTagline } from "../sections/HeroTagline";
+import { Home } from "../sections/Home";
+import { Project } from "../sections/Project";
+import { Skill } from "../sections/Skill";
 
 export const Dashboard: FC = (): ReactElement => {
   const { scrollYProgress } = useScroll();

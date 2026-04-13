@@ -68,7 +68,7 @@ export const Footer = () => {
             <div className="flex ">
               {Social.map((s) => {
                 return (
-                  <div className="flex py-7 w-15  ">
+                  <div className="flex py-7 w-15 " key={s.id}>
                     <a
                       href={s.url}
                       className="hover:text-[#780FFF] "

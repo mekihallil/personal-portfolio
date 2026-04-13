@@ -26,7 +26,7 @@ type myskill = {
 
 export const MySkill: myskill[] = [
   {
-    id: 1,
+    id: 441,
     title: "CORE TECHNOLOGIES",
     icon: [
       HtmlIcon,
@@ -38,27 +38,27 @@ export const MySkill: myskill[] = [
     ],
   },
   {
-    id: 2,
+    id: 442,
     title: "FRONTEND DEVELOPMENT",
     icon: [reactIcon, viteIcon, tailwindCssIcon, shadCnUiIcon],
   },
   {
-    id: 3,
+    id: 443,
     title: "BACKEND DEVELOPMENT",
     icon: [nodeIcon, expressIcon, mongodbIcon, mongooseIcon, jwtIcon],
   },
   {
-    id: 4,
+    id: 444,
     title: "DATABASE",
     icon: [mongodbIcon],
   },
   {
-    id: 5,
+    id: 445,
     title: "TOOLS & WORKFLOW",
     icon: [gitIcon, githubIcon, postmanIcon, vscodeIcon],
   },
   {
-    id: 6,
+    id: 446,
     title: "API & AUTHENTICATION",
     icon: [restapiIcon, axiosIcon, jwtIcon],
   },

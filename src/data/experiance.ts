@@ -11,7 +11,7 @@ type experiance = {
 
 export const experinace: experiance[] = [
   {
-    id: 1,
+    id: 22,
     date: 2025,
     title: "Junior Full Stack Developer",
     icon: PersonIcon,

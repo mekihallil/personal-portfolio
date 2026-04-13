@@ -16,9 +16,9 @@ export const About: FC = (): ReactElement => {
           <div className="grid  h-full ">
             <div className="flex flex-col ml-22">
               <p className="text-[20px] font-semibold">ABOUT</p>
-              <h1 className="text-7xl pt-2 text-[#780FFF] text-gradient font-semibold">
+              <div className="text-7xl pt-2 text-[#780FFF] text-gradient font-semibold">
                 <h1 className="text-6xl pt-2">About Me</h1>
-              </h1>
+              </div>
               <p className="mt-4 text-[1.6rem] md:w-2xl font-semibold"></p>
             </div>
 
@@ -45,11 +45,8 @@ export const About: FC = (): ReactElement => {
             {aboutData.map((a) => {
               const Icon = a.icon;
               return (
-                <div>
-                  <Card
-                    className="h-54 bg-transparent border-white rounded-3xl "
-                    key={a.id}
-                  >
+                <div key={a.id}>
+                  <Card className="h-54 bg-transparent border-white rounded-3xl ">
                     <CardHeader className="text-center">
                       <CardTitle className="h-1/3 text-6xl flex justify-center ">
                         {a.id === 4 ? (
@@ -64,15 +61,7 @@ export const About: FC = (): ReactElement => {
                         )}
                       </CardTitle>
                       <CardContent className="h-1/3 flex justify-center text-3xl">
-                        <p>
-                          {a.id === 4 ? (
-                            "Project"
-                          ) : a.id === 1 ? (
-                            <div className="text-xl">{a.title}</div>
-                          ) : (
-                            a.title
-                          )}
-                        </p>
+                        <p>{a.id === 4 ? "Project" : a.title}</p>
                       </CardContent>
                       <CardDescription className="h-1/3 text-xs m-auto">
                         {a.description}
