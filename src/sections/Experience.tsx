@@ -10,9 +10,7 @@ export const Experience: FC = (): ReactElement => {
           <h1 className="text-7xl pt-2 text-[#780FFF] text-gradient font-medium  max-lg:text-3xl">
             EXPERIENCE
           </h1>
-          <p className="text-3xl mb-6 pt-5  max-lg:flex  max-lg:flex-wrap">
-           
-          </p>
+          <p className="text-3xl mb-6 pt-5  max-lg:flex  max-lg:flex-wrap"></p>
         </div>
         <div className="flex mx-22 my-15 max-lg:ml-3">
           <div className="w-1/2 h-full  max-lg:w-lvw">

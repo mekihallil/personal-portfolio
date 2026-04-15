@@ -10,9 +10,9 @@ import {
 export const About: FC = (): ReactElement => {
   return (
     <>
-      <div id="aboutme" className="flex h-full mb-25">
+      <div id="aboutme" className="flex h-full mt-25 mb-45">
         {/* paragraph about me   */}
-        <div className="w-1/2 text-2xl pt-10 max-lg:w-screen ">
+        <div className="w-1/2 text-2xl pt-30 max-lg:w-screen ">
           <div className="grid  h-full ">
             <div className="flex flex-col ml-22 max-lg:ml-3">
               <p className="text-[20px] font-semibold">ABOUT</p>
@@ -25,7 +25,9 @@ export const About: FC = (): ReactElement => {
             {aboutTextData.map((b) => {
               return (
                 <div className="ml-22 max-lg:ml-0" key={b.id}>
-                  <p className="pl-10 text-[18px]  max-lg:pl-2">{b.description}</p>
+                  <p className="pl-10 text-[18px]  max-lg:pl-2">
+                    {b.description}
+                  </p>
                 </div>
               );
             })}

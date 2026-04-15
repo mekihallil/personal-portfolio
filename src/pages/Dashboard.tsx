@@ -29,7 +29,7 @@ function Components() {
   return (
     <>
       <div>
-        <div className="flex flex-col gap-20  dark:bg-[#070C17] dark:text-white bg-white text-[#070C17] font-['Miranda_Sans']">
+        <div className="dark:bg-[#070C17] dark:text-white bg-white text-[#070C17] font-['Miranda_Sans']">
           <Navbar />
           <Home />
           <About />
