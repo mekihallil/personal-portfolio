@@ -11,26 +11,26 @@ export const Project: FC = (): ReactElement => {
   return (
     <>
       <div id="project" className="h-svh mt-30">
-        <div className="ml-22 mb-10">
+        <div className="ml-22 mb-10 max-lg:ml-3">
           <p className="text-[20px] font-semibold">PROJECTS</p>
           <h1 className="text-6xl pt-2 text-[#780FFF] text-gradient font-semibold">
             My Projects
           </h1>
-          <p className="mt-4 text-[1.6rem] w-xl font-semibold">
+          <p className="mt-4 text-[1.6rem] w-xl font-semibold max-lg:w-screen">
             I have production-level experience in crafting aesthetic user
             experiences
           </p>
         </div>
         <div className="">
           <ScrollArea className="w-full h-130 m rounded-md border-none whitespace-nowrap ">
-            <div className=" flex  w-full  space-x-4 overflow-x-auto scroll-smooth  mx-22 gap-10 ">
+            <div className=" flex  w-full  space-x-4 overflow-x-auto scroll-smooth  mx-22 gap-10 max-lg:mx-2">
               {projectCard.map((c) => {
                 return (
                   <figure
-                    className="shrink-0 w-180 h-110 bg-transparent border-4 rounded-4xl"
+                    className="shrink-0 w-180 h-110 bg-transparent border-4 rounded-4xl max-lg:w-90 max-lg:h-90"
                     key={c.id}
                   >
-                    <figcaption className="relative grid place-content-center h-full text-5xl t-2   text-muted-foreground">
+                    <figcaption className="relative grid place-content-center h-full text-5xl text-muted-foreground">
                       {c.title}
                       <span className="flex align-bottom font-semibold text-foreground "></span>
                     </figcaption>

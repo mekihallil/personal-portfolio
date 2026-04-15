@@ -12,9 +12,9 @@ export const About: FC = (): ReactElement => {
     <>
       <div id="aboutme" className="flex h-full mb-25">
         {/* paragraph about me   */}
-        <div className="w-1/2 text-2xl pt-10">
+        <div className="w-1/2 text-2xl pt-10 max-lg:w-screen ">
           <div className="grid  h-full ">
-            <div className="flex flex-col ml-22">
+            <div className="flex flex-col ml-22 max-lg:ml-3">
               <p className="text-[20px] font-semibold">ABOUT</p>
               <div className="text-7xl pt-2 text-[#780FFF] text-gradient font-semibold">
                 <h1 className="text-6xl pt-2">About Me</h1>
@@ -24,8 +24,8 @@ export const About: FC = (): ReactElement => {
 
             {aboutTextData.map((b) => {
               return (
-                <div className="ml-22" key={b.id}>
-                  <p className="pl-10 text-[18px]  ">{b.description}</p>
+                <div className="ml-22 max-lg:ml-0" key={b.id}>
+                  <p className="pl-10 text-[18px]  max-lg:pl-2">{b.description}</p>
                 </div>
               );
             })}
@@ -40,8 +40,8 @@ export const About: FC = (): ReactElement => {
           </div>
         </div>
         {/* card about me  */}
-        <div className="w-1/2 grid content-center mt-20">
-          <div className="grid grid-cols-2 gap-8  h-full mx-30">
+        <div className="w-1/2 grid content-center mt-20  max-lg:hidden ">
+          <div className="grid grid-cols-2 gap-8 h-full mx-30 max-lg:hidden">
             {aboutData.map((a) => {
               const Icon = a.icon;
               return (

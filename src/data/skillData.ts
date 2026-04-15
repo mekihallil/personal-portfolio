@@ -35,6 +35,7 @@ export const MySkill: myskill[] = [
       typescriptIcon,
       reactIcon,
       nodeIcon,
+      
     ],
   },
   {

@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <>
       <div className="flex flex-col h-40 dark:bg-[#0a0f1c] bg-[#e4e2e2] mt-10 ">
-        <div className="h-4/5 flex felx-row justify-between mx-22">
+        <div className="h-4/5 flex felx-row justify-between mx-22  max-lg:mx-0">
           <div className="flex flex-col justify-around mt-3">
             <div className="flex flex-row">
               <div className="mr-3">
@@ -64,7 +64,7 @@ export const Footer = () => {
             </div>
           </div>
           <div className="my-auto text-3xl font-semibold">M3k!</div>
-          <div className=" flex flex-row justify-around my-auto">
+          <div className=" flex flex-row justify-around my-auto  max-lg:hidden">
             <div className="flex ">
               {Social.map((s) => {
                 return (

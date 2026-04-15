@@ -10,22 +10,22 @@ import spinImage from "../assets/image/spin.png";
 export const Home: FC = (): ReactElement => {
   return (
     <>
-      <div id="home" className="h-130 mb-40">
-        <div className="flex gap-6 mx-22 ">
+      <div id="home" className="h-130 ">
+        <div className="flex gap-6 mx-22 max-lg:ml-2  ">
           {/* introduction */}
-          <div className="text w-3/5 h-auto my-35 ">
-            <div className="flex text-5xl text-[#780FFF] font-semibold">
+          <div className="text w-3/5 h-auto my-35 max-lg:my-25 max-lg:w-full">
+            <div className="flex text-5xl text-[#780FFF] font-semibold ">
               <h1>Hello</h1>
               <img className="ml-4 w-12" src={helloeIcon} alt="" />
             </div>
-            <div className="font-semibold text-7xl py-3">
-              <h1 className="text-6xl font-bold">
+            <div className="font-semibold py-3 ">
+              <h1 className="text-6xl font-bold max-lg:text-[44px] max-lg:">
                 I am
-                <span className=" mx-7 -pt-2">Meki</span>
+                <span className=" mx-7 -pt-2 max-lg:m-0 max-lg:p-2">Meki</span>
                 Hallil
               </h1>
             </div>
-            <div className="">
+            <div >
               <TypeAnimation
                 sequence={[
                   "Junior Full-Stack Developer",
@@ -45,7 +45,7 @@ export const Home: FC = (): ReactElement => {
                 ]}
                 speed={50}
                 repeat={Infinity}
-                className="text-3xl underline decoration-[#780FFF]"
+                className="text-3xl underline decoration-[#780FFF] max-lg:text-xl "
               />
             </div>
             <div className="flex ">
@@ -82,8 +82,8 @@ export const Home: FC = (): ReactElement => {
             </div>
           </div>
           {/* animation  */}
-          <div className=" w-2/5 h-100  pt-45 pl-20">
-            <div>
+          <div className=" w-2/5 h-100  pt-30 pl-10 ">
+            <div className="max-lg:hidden">
               <div className="w-90 ">
                 <img src={spinImage} alt="" />
               </div>

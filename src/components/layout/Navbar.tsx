@@ -20,7 +20,7 @@ export const Navbar: FC = (): ReactElement => {
 
   return (
     <Menubar className="border border-none  dark:text-white ">
-      <div className="flex justify-between pl-22 pr-18 py-6 fixed top-0 right-0 left-0 mask-b-from-sky-100 dark:text-white  bg-[#e4e2e2] mask-b-from-10%  dark:bg-[#0a1c4e]">
+      <div className="flex justify-between pl-22 pr-18 py-6 fixed top-0 right-0 left-0 mask-b-from-sky-100 dark:text-white bg-[#e4e2e2] mask-b-from-10% dark:bg-[#0a1c4e] max-lg:p-4 max-lg:w-screen">
         <h1 className="text-xl font-bold">
           <a href="#home">M3k!</a>
         </h1>
@@ -54,13 +54,16 @@ export const Navbar: FC = (): ReactElement => {
       </div>
 
       {open && (
-        <div className="fixed inset-0 bg-black/90 backdrop-blur-md flex flex-col items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/90 backdrop-blur-md flex flex-col items-center justify-center z-50 max-lg:w-lvw max-lg:h-lvh">
           <button
             className="absolute top-6 right-6 text-white"
             onClick={() => setOpen(false)}
           >
             <motion.div whileTap={{ rotate: 180 }}>
-              <ClearRoundedIcon className="mx-13 my-1" sx={{ fontSize: 40 }} />
+              <ClearRoundedIcon
+                className="mx-13 my-1 max-lg:m-0 "
+                sx={{ fontSize: 40 }}
+              />
             </motion.div>
           </button>
           <ul className="text-white text-6xl space-y-6 text-center">

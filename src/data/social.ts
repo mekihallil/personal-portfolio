@@ -32,7 +32,7 @@ export const Social: social[] = [
   {
     id: 554,
     title: "telegram",
-    url: "https://t.me/meki_hallil",
+    url: "https://t.me/mekihallil",
     icon: SendRoundedIcon,
   },
 ];
