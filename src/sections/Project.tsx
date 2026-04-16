@@ -11,12 +11,12 @@ export const Project: FC = (): ReactElement => {
   return (
     <>
       <div id="project" className="h-svh mt-30">
-        <div className="ml-22 mb-10 max-lg:ml-3">
+        <div className="ml-22 mb-10 max-lg:m-0">
           <p className="text-[20px] font-semibold">PROJECTS</p>
           <h1 className="text-6xl pt-2 text-[#780FFF] text-gradient font-semibold">
             My Projects
           </h1>
-          <p className="mt-4 text-[1.6rem] w-xl font-semibold max-lg:w-screen">
+          <p className="mt-4 text-[1.6rem] w-xl font-semibold max-lg:w-full">
             I have production-level experience in crafting aesthetic user
             experiences
           </p>

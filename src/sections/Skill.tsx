@@ -6,7 +6,7 @@ export const Skill: FC = (): ReactElement => {
   return (
     <>
       <div className="h-full mx-22 max-lg:m-0 ">
-        <div className="max-lg:w-screen">
+        <div className="max-lg:w-full">
           <div className="flex flex-col ">
             <p className="text-[20px] font-semibold">SKILLS</p>
             <h1 className="text-6xl pt-2 text-[#780FFF] text-gradient font-semibold">
@@ -36,8 +36,8 @@ export const Skill: FC = (): ReactElement => {
                           whileHover={{ scale: 2.5 }}
                           transition={{
                             type: "spring",
-                            stiffness: 1000,
-                            damping: 15,
+                            stiffness: 1300,
+                            damping: 25,
                           }}
                           className="w-12 "
                           src={i}

@@ -29,7 +29,7 @@ function Components() {
   return (
     <>
       <div>
-        <div className="dark:bg-[#070C17] dark:text-white bg-white text-[#070C17] font-['Miranda_Sans']">
+        <div className="dark:bg-[#070C17] dark:text-white bg-white text-[#070C17] font-['Miranda_Sans'] max-lg:pl-3">
           <Navbar />
           <Home />
           <About />

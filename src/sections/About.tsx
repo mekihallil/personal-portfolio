@@ -24,8 +24,8 @@ export const About: FC = (): ReactElement => {
 
             {aboutTextData.map((b) => {
               return (
-                <div className="ml-22 max-lg:ml-0" key={b.id}>
-                  <p className="pl-10 text-[18px]  max-lg:pl-2">
+                <div className="ml-22 max-lg:ml-0 max-lg:pb-7" key={b.id}>
+                  <p className="pl-10 text-[18px]  max-lg:pl-2 ">
                     {b.description}
                   </p>
                 </div>

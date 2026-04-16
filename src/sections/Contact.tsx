@@ -49,7 +49,7 @@ export const Contact: FC = (): ReactElement => {
   };
 
   return (
-    <div id="contact" className="grid place-items-center mt-20">
+    <div id="contact" className="grid place-items-center mt-20 max-lg:m-10">
       <div className="flex flex-col justify-center">
         <h1 className="text-7xl">Contact</h1>
         <h2 className="text-2xl text-center mt-3">Get in touch.</h2>

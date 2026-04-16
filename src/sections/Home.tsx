@@ -30,17 +30,15 @@ export const Home: FC = (): ReactElement => {
                   alt=""
                 />
               </div>
-              <div className="font-semibold py-3 ">
-                <h1 className="text-7xl font-bold max-lg:text-[44px] max-lg:">
+              <div className="font-semibold py-5 ">
+                <h1 className=" flex flex-wrap text-7xl font-bold  max-lg:text-[52px] ">
                   I am
-                  <span className=" mx-7 -pt-2 max-lg:m-0 max-lg:p-2">
-                    Meki
-                  </span>
-                  Hallil
+                  <span className=" mx-7 max-lg:mx-0 max-lg:px-2">Meki</span>
+                  <span>Hallil</span>
                 </h1>
               </div>
             </div>
-            <div className="py-3">
+            <div className="font-['Inconsolata']">
               <TypeAnimation
                 sequence={[
                   "Junior Full-Stack Developer",
@@ -58,15 +56,15 @@ export const Home: FC = (): ReactElement => {
                   "Continuously Learning and Improving",
                   3000,
                 ]}
-                speed={50}
+                speed={60}
                 repeat={Infinity}
-                className="text-3xl font-normal max-lg:text-xl "
+                className="text-3xl font-normal max-lg:text-2xl "
               />
             </div>
             <div className="flex ">
               {Social.map((s) => {
                 return (
-                  <div className="flex py-9 w-15" key={s.id}>
+                  <div className="flex py-5 w-15" key={s.id}>
                     <a
                       href={s.url}
                       className="hover:text-[#780FFF] "
@@ -97,8 +95,8 @@ export const Home: FC = (): ReactElement => {
             </div>
           </div>
           {/* animation  */}
-          <div className=" w-2/5 h-100  pt-50 pl-10 ">
-            <div className="max-lg:hidden">
+          <div className=" w-2/5 h-100 pt-50 pl-10 max-lg:hidden">
+            <div className="">
               <div className="w-90 ">
                 <img src={spinImage} alt="" />
               </div>

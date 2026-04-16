@@ -5,8 +5,8 @@ export const Footer = () => {
   return (
     <>
       <div className="flex flex-col h-40 dark:bg-[#0a0f1c] bg-[#e4e2e2] mt-10 ">
-        <div className="h-4/5 flex felx-row justify-between mx-22  max-lg:mx-0">
-          <div className="flex flex-col justify-around mt-3">
+        <div className="h-4/5 flex felx-row justify-between mx-22  max-lg:mx-0 max-lg:flex max-lg:flex-col">
+          <div className="flex flex-col justify-around mt-3 max-lg:hidden ">
             <div className="flex flex-row">
               <div className="mr-3">
                 <svg
@@ -63,15 +63,17 @@ export const Footer = () => {
               <div>+251-910283179</div>
             </div>
           </div>
-          <div className="my-auto text-3xl font-semibold">M3k!</div>
-          <div className=" flex flex-row justify-around my-auto  max-lg:hidden">
+          <div className="my-auto text-3xl font-semibold max-lg:text-center">
+            M3k!
+          </div>
+          <div className=" flex flex-row justify-around my-auto">
             <div className="flex ">
               {Social.map((s) => {
                 return (
-                  <div className="flex py-7 w-15 " key={s.id}>
+                  <div className="flex pl-4 w-15 " key={s.id}>
                     <a
                       href={s.url}
-                      className="hover:text-[#780FFF] "
+                      className="hover:text-[#780FFF] pr-4"
                       target="_blank"
                     >
                       <s.icon fontSize="large" />
