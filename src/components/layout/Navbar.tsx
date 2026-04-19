@@ -7,9 +7,9 @@ import { motion } from "motion/react";
 import { useEffect, useState, type FC, type ReactElement } from "react";
 
 export const Navbar: FC = (): ReactElement => {
+  const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const [open, setOpen] = useState(false);
-  const [mode, setMode] = useState(true);
-
+  const [mode, setMode] = useState(isDark);
   useEffect(() => {
     if (mode) {
       document.documentElement.classList.add("dark");

@@ -5,7 +5,6 @@ import type { FC, ReactElement } from "react";
 import { TypeAnimation } from "react-type-animation";
 import bollImage from "../assets/image/boll.svg";
 import pcImage from "../assets/image/pc.svg";
-import spinImage from "../assets/image/spin.png";
 
 export const Home: FC = (): ReactElement => {
   return (
@@ -18,12 +17,12 @@ export const Home: FC = (): ReactElement => {
               <div className="flex w-full text-[#780FFF] font-semibold ">
                 <h1 className="text-6xl">Hello</h1>
                 <motion.img
-                  initial={{ scale: 3, rotate: 0 }}
+                  initial={{ scale: 3, rotate: 300 }}
                   animate={{ scale: [3, 3, 1], rotate: [0, 40, 0, 40, 0] }}
                   transition={{
-                    duration: 1.2,
-                    ease: "easeInOut",
-                    times: [0, 0.8, 1],
+                    duration: 1.1,
+                    ease: [1, 2, 2, 1],
+                    times: [0.2, 0.8, 1.5],
                   }}
                   className="ml-5 w-15 -rotate-3"
                   src={helloeIcon}
@@ -97,13 +96,13 @@ export const Home: FC = (): ReactElement => {
           {/* animation  */}
           <div className=" w-2/5 h-100 pt-50 pl-10 max-lg:hidden">
             <div className="">
-              <div className="w-90 ">
+              {/* <div className="w-10 animate-out">
                 <img src={spinImage} alt="" />
-              </div>
-              <div className=" w-20 h-20 animate-bounce -mt-110  pb-25  ">
+              </div> */}
+              <div className=" w-20 h-20 animate-bounce -mt-10  pb-25  ">
                 <img src={bollImage} alt="" />
               </div>
-              <div className="w-90 ml-6 ">
+              <div className="w-85 ml-6 ">
                 <img src={pcImage} alt="" />
               </div>
             </div>
