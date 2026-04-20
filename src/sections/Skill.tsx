@@ -12,7 +12,7 @@ export const Skill: FC = (): ReactElement => {
             <h1 className="text-6xl pt-2 text-[#780FFF] text-gradient font-semibold">
               My Skills
             </h1>
-            <p className="mt-4 text-[1.6rem] font-semibold">
+            <p className="mt-4 text-[1.6rem] font-semibold w-1/2">
               I have production-level experience in crafting aesthetic user
               experiences with modern frontend architecture, knowing when to use
               the right tools.

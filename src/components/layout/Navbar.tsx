@@ -43,9 +43,10 @@ export const Navbar: FC = (): ReactElement => {
 
               <MenubarTrigger onClick={() => setOpen(!open)}>
                 {open ? (
-                  <ClearRoundedIcon sx={{ fontSize: 40 }} />
+                  <ClearRoundedIcon  sx={{ fontSize: 40 }} />
                 ) : (
                   <MenuRoundedIcon sx={{ fontSize: 40 }} />
+                  
                 )}
               </MenubarTrigger>
             </MenubarMenu>

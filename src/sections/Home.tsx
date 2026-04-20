@@ -69,7 +69,7 @@ export const Home: FC = (): ReactElement => {
                       className="hover:text-[#780FFF] "
                       target="_blank"
                     >
-                      <s.icon fontSize="large" />
+                      <s.icon fontSize="medium" />
                     </a>
                   </div>
                 );
