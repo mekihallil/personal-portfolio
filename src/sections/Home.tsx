@@ -3,8 +3,10 @@ import { Social } from "@/data/social";
 import { motion } from "framer-motion";
 import type { FC, ReactElement } from "react";
 import { TypeAnimation } from "react-type-animation";
-import bollImage from "../assets/image/boll.svg";
-import pcImage from "../assets/image/pc.svg";
+import bollImageLight from "../assets/image/boll-dark.svg";
+import bollImageDark from "../assets/image/boll.svg";
+import pcImageLight from "../assets/image/pc-dark.svg";
+import pcImageDark from "../assets/image/pc.svg";
 
 export const Home: FC = (): ReactElement => {
   return (
@@ -100,10 +102,20 @@ export const Home: FC = (): ReactElement => {
                 <img src={spinImage} alt="" />
               </div> */}
               <div className=" w-20 h-20 animate-bounce -mt-10  pb-25  ">
-                <img src={bollImage} alt="" />
+                <img
+                  className="dark:hidden inline"
+                  src={bollImageLight}
+                  alt=""
+                />
+                <img
+                  className="hidden dark:inline"
+                  src={bollImageDark}
+                  alt=""
+                />
               </div>
               <div className="w-85 ml-6 ">
-                <img src={pcImage} alt="" />
+                <img className="dark:hidden inline" src={pcImageLight} alt="" />
+                <img className="hidden dark:inline" src={pcImageDark} alt="" />
               </div>
             </div>
           </div>

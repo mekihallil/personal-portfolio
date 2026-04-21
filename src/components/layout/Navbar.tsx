@@ -17,7 +17,6 @@ export const Navbar: FC = (): ReactElement => {
       document.documentElement.classList.remove("dark");
     }
   }, [mode]);
-
   return (
     <Menubar className="border border-none  dark:text-white ">
       <div className="flex justify-between  pl-22 pr-18 py-6 fixed top-0 right-0 left-0 mask-b-from-sky-100 dark:text-white bg-[#e4e2e2] mask-b-from-10% dark:bg-[#0a1c4e] max-lg:p-4 max-lg:w-screen">
@@ -43,10 +42,9 @@ export const Navbar: FC = (): ReactElement => {
 
               <MenubarTrigger onClick={() => setOpen(!open)}>
                 {open ? (
-                  <ClearRoundedIcon  sx={{ fontSize: 40 }} />
+                  <ClearRoundedIcon sx={{ fontSize: 40 }} />
                 ) : (
                   <MenuRoundedIcon sx={{ fontSize: 40 }} />
-                  
                 )}
               </MenubarTrigger>
             </MenubarMenu>
