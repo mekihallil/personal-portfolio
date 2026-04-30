@@ -1,18 +1,18 @@
+import { MySkill } from "@/data/skillData";
 import * as motion from "motion/react-client";
 import type { FC, ReactElement } from "react";
-import { MySkill } from "../data/skillData";
 
 export const Skill: FC = (): ReactElement => {
   return (
     <>
-      <div className="h-full mx-22 max-lg:m-0 ">
+      <div className="h-full mx-22 max-lg:m-0 max-lg:pl-3">
         <div className="max-lg:w-full">
           <div className="flex flex-col ">
             <p className="text-[20px] font-semibold">SKILLS</p>
             <h1 className="text-6xl pt-2 text-[#780FFF] text-gradient font-semibold">
               My Skills
             </h1>
-            <p className="mt-4 text-[1.6rem] font-semibold w-1/2">
+            <p className="mt-4 text-[1.6rem] font-semibold w-1/2 max-lg:w-full">
               I have production-level experience in crafting aesthetic user
               experiences with modern frontend architecture, knowing when to use
               the right tools.

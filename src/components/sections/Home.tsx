@@ -1,12 +1,12 @@
 import helloeIcon from "@/assets/icons/hello.webp";
+import bollImageLight from "@/assets/image/boll-dark.svg";
+import bollImageDark from "@/assets/image/boll.svg";
+import pcImageLight from "@/assets/image/pc-dark.svg";
+import pcImageDark from "@/assets/image/pc.svg";
 import { Social } from "@/data/social";
 import { motion } from "framer-motion";
 import type { FC, ReactElement } from "react";
 import { TypeAnimation } from "react-type-animation";
-import bollImageLight from "../assets/image/boll-dark.svg";
-import bollImageDark from "../assets/image/boll.svg";
-import pcImageLight from "../assets/image/pc-dark.svg";
-import pcImageDark from "../assets/image/pc.svg";
 
 export const Home: FC = (): ReactElement => {
   return (

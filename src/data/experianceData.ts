@@ -1,8 +1,8 @@
-
 import PersonIcon from "@mui/icons-material/Person";
 
 type experiance = {
   id: number;
+  finalDate?: string;
   date: number;
   title: string;
   icon: React.ElementType;
@@ -11,11 +11,12 @@ type experiance = {
 
 export const experinace: experiance[] = [
   {
-    id: 22,
+    id: 1,
+    finalDate: "Present",
     date: 2025,
-    title: "Junior Full Stack Developer",
+    title: "MERN stack Development",
     icon: PersonIcon,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum facere inventore cupiditate fuga quos ullam eos labore aspernatur sed.",
+      "Learning and Building type-safe MERN apps with TypeScript & Tailwind while constantly learning",
   },
 ];

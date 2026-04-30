@@ -35,7 +35,7 @@ export const Contact: FC = (): ReactElement => {
 
       console.log("SUCCESS:", result.text);
 
-      alert("Message sent successfully ✅");
+      alert("Message sent successfully ");
 
       setFormData({
         name: "",
@@ -44,18 +44,24 @@ export const Contact: FC = (): ReactElement => {
       });
     } catch (error) {
       console.error("FAILED:", error);
-      alert("Failed to send message ❌");
+      alert("Failed to send message ");
     }
   };
 
   return (
-    <div id="contact" className="grid place-items-center mt-20 max-lg:m-10">
+    <div
+      id="contact"
+      className="grid place-items-center mt-20 max-lg:mx-10 max-lg:pt-13"
+    >
       <div className="flex flex-col justify-center">
         <h1 className="text-7xl">Contact</h1>
         <h2 className="text-2xl text-center mt-3">Get in touch.</h2>
       </div>
 
-      <form onSubmit={handleSubmit} className="w-full max-w-2xl mt-10">
+      <form
+        onSubmit={handleSubmit}
+        className="w-full max-w-2xl mt-10 max-lg:mt-0"
+      >
         {/* NAME */}
         <div className="grid grid-cols-1">
           <label htmlFor="name">Name</label>
@@ -70,7 +76,7 @@ export const Contact: FC = (): ReactElement => {
           />
         </div>
 
-        <div className="grid grid-cols-1 mt-7">
+        <div className="grid grid-cols-1 mt-7 max-lg:mt-3">
           <label htmlFor="email">Email</label>
           <input
             id="email"
@@ -83,7 +89,7 @@ export const Contact: FC = (): ReactElement => {
           />
         </div>
 
-        <div className="grid grid-cols-1 mt-7">
+        <div className="grid grid-cols-1 mt-7 max-lg:mt-3">
           <label htmlFor="message">Message</label>
           <textarea
             id="message"
@@ -95,7 +101,7 @@ export const Contact: FC = (): ReactElement => {
           />
         </div>
 
-        <div className="flex justify-center mt-10">
+        <div className="flex justify-center mt-10 max-lg:mt-3">
           <button
             type="submit"
             className="border-2 border-[#780FFF] px-7 py-3 rounded-sm hover:bg-[#780FFF] active:text-white font-semibold transition"

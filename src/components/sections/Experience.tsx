@@ -1,13 +1,13 @@
+import { experinace } from "@/data/experianceData";
 import type { FC, ReactElement } from "react";
-import { experinace } from "../data/experiance";
 
 export const Experience: FC = (): ReactElement => {
   return (
     <>
-      <section id="experience" className="flex flex-col mt-30">
+      <section id="experience" className="flex flex-col mt-30 max-lg:pl-3">
         <div className=" mx-22 max-lg:mx-3  max-lg:w-auto">
           <p className="text-[20px] font-semibold">WORK</p>
-          <h1 className="text-7xl pt-2 text-[#780FFF] text-gradient font-medium  max-lg:text-3xl">
+          <h1 className="text-7xl pt-2 text-[#780FFF] text-gradient font-medium  max-lg:text-5xl">
             EXPERIENCE
           </h1>
           <p className="text-3xl mb-6 pt-5  max-lg:flex  max-lg:flex-wrap"></p>
@@ -38,15 +38,18 @@ export const Experience: FC = (): ReactElement => {
                   <section className="h-64 w-100  max-lg:w-min">
                     <section>
                       <div className="relative -top-50 pl-5  max-lg:w-85 ">
-                        <h1 className="text-6xl font-semibold">{e.date}</h1>
+                        <h1 className=" pl-3 max-lg:pl-3 ">{e.finalDate}</h1>
+                      </div>
+                      <div className="relative -top-50 pl-5  max-lg:w-85 ">
+                        <h1 className="text-4xl font-semibold">{e.date}</h1>
                       </div>
                     </section>
                     <section>
-                      <div className="relative -top-15 pl-5 max-lg:w-70">
+                      <div className="relative -top-22 pl-5 max-lg:w-70">
                         <h1 className="">
                           <Icon style={{ fontSize: 50 }} />
                         </h1>
-                        <p className="text-2xl font-semibold px-5 max-lg:flex  max-lg:w-80">
+                        <p className="text-2xl font-semibold pl-5 mb-4 max-lg:flex max-lg:w-80 max-lg:mb-2">
                           {e.title}
                         </p>
                         <h1 className="text-xl w-100 font-normal max-lg:w-80">

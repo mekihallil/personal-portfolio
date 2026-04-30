@@ -2,13 +2,13 @@ import { motion, useScroll } from "motion/react";
 import type { FC, ReactElement } from "react";
 import { Footer } from "../components/layout/Footer";
 import { Navbar } from "../components/layout/Navbar";
-import { About } from "../sections/About";
-import { Contact } from "../sections/Contact";
-import { Experience } from "../sections/Experience";
-import { HeroTagline } from "../sections/HeroTagline";
-import { Home } from "../sections/Home";
-import { Project } from "../sections/Project";
-import { Skill } from "../sections/Skill";
+import { About } from "../components/sections/About";
+import { Contact } from "../components/sections/Contact";
+import { Experience } from "../components/sections/Experience";
+import { HeroTagline } from "../components/sections/HeroTagline";
+import { Home } from "../components/sections/Home";
+import { Project } from "../components/sections/Project";
+import { Skill } from "../components/sections/Skill";
 
 export const Dashboard: FC = (): ReactElement => {
   const { scrollYProgress } = useScroll();
@@ -28,18 +28,16 @@ export const Dashboard: FC = (): ReactElement => {
 function Components() {
   return (
     <>
-      <div>
-        <div className="dark:bg-[#070C17] dark:text-white bg-white text-[#070C17] font-['Miranda_Sans'] max-lg:pl-3">
-          <Navbar />
-          <Home />
-          <About />
-          <Skill />
-          <Project />
-          <HeroTagline />
-          <Experience />
-          <Contact />
-          <Footer />
-        </div>
+      <div className="dark:bg-[#070C17] dark:text-white bg-white text-[#070C17] font-['Miranda_Sans']">
+        <Navbar />
+        <Home />
+        <About />
+        <Skill />
+        <Project />
+        <HeroTagline />
+        <Experience />
+        <Contact />
+        <Footer />
       </div>
     </>
   );
